@@ -50,7 +50,7 @@ for subdeps in extras_require.values():
 extras_require["all"] = everything
 
 setup(
-    name="paramiko",
+    name="paramiko_fred",
     version=version,
     description="SSH2 protocol library",
     long_description=long_description,
