@@ -1066,6 +1066,7 @@ class Transport(threading.Thread, ClosingContextManager):
         self._send_user_message(m)
         start_ts = time.time()
         while True:
+            self._log(DEBUG, "!!!! in while loop"))
             event.wait(0.1)
             if not self.active:
                 e = self.get_exception()
